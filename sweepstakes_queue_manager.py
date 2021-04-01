@@ -1,4 +1,4 @@
-from queue import Queue
+from sweep_queue import Queue
 
 class SweepstakesQueueManager:
     def __init__(self):
