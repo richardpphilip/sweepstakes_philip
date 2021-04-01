@@ -19,5 +19,5 @@ class Sweepstake:
         return winner
 
     def print_contestant_info(self, contestant):
-        print(contestant.first_name)
-        print(contestant.last_name)
+        print(f'{contestant.first_name} {contestant.last_name} congrats you have won the grand prize!')
+
