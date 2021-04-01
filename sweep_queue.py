@@ -1,10 +1,10 @@
 class Queue:
 
     def __init__(self):
-        self.queue = []
+        self.list_queue = []
 
     def enqueue(self, item):
-        self.queue.append(item)
+        self.list_queue.append(item)
 
     def dequeue(self):
-        return self.queue.pop(0)
+        return self.list_queue.pop(0)
