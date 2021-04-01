@@ -14,13 +14,12 @@ user_interface = UserInterface()
 # sweepstake.register_contestant(contestant2)
 # sweepstake.register_contestant(contestant1)
 # sweepstake.pick_winner()
-#cant get my sweepstakes to append to the the stack
+
 sweepstake_object = SweepstakesStackManager()
-# sweepstake_object.insert_sweepstakes('bloodsport')
-# sweepstake_object.insert_sweepstakes('auction')
 sweepstake1 = user_interface.instantiate_sweepstakes()
 sweepstake2 = user_interface.instantiate_sweepstakes()
 sweepstake_object.insert_sweepstakes(sweepstake2)
 sweepstake_object.insert_sweepstakes(sweepstake1)
+sweepstake_object.get_sweepstakes()
 
 
