@@ -6,5 +6,6 @@ class Contestant:
         self.email = email
         self.registration_number = registration_number
     def is_winner(self):
+        #picked a winner via logic in the sweepstakes class
         pass
 
