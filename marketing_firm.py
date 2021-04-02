@@ -1,6 +1,6 @@
 from sweepstakes_queue_manager import SweepstakesQueueManager
 from sweepstakes_stack_manager import SweepstakesStackManager
-from marketing_firm_creator import MarketingFirmCreator
+from marketing_firm_creator import MarketingFirmCreator, sweepstakes_stack, sweepstakes_queue
 
 marketing_firm_creator = MarketingFirmCreator()
 
@@ -10,9 +10,9 @@ class MarketingFirm:
         self.manager_choice = marketing_firm_creator.choose_manager_type()
 
     def create_sweepstakes(self):
-        if self.manager_choice == 'queue':
+        if self.manager_choice == sweepstakes_queue:
             SweepstakesQueueManager.get_sweepstakes_queue(self)
-        elif self.manager_choice == 'stack':
+        elif self.manager_choice == sweepstakes_stack:
             SweepstakesStackManager.get_sweepstakes_stack(self)
         else:
             print('that is not a valid option')
